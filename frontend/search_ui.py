@@ -13,7 +13,7 @@ if st.button("Search"):
         st.warning("Please enter a query.")
     else:
         with st.spinner("Searching..."):
-            response = requests.post("http://localhost:8000/search", json={"query": query})
+            response = requests.post("http://medical-backend:8000/search", json={"query": query})
             if response.status_code == 200:
                 results = response.json().get("results", [])
                 if not results:
