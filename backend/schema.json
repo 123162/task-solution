@@ -1,0 +1,24 @@
+{
+    "classes": [
+      {
+        "class": "MedicalQuestion",
+        "description": "A medical Q&A entry",
+        "vectorizer": "none",
+        "properties": [
+          {
+            "name": "question",
+            "dataType": ["text"]
+          },
+          {
+            "name": "answer",
+            "dataType": ["text"]
+          },
+          {
+            "name": "source",
+            "dataType": ["text"]
+          }
+        ]
+      }
+    ]
+  }
+  
